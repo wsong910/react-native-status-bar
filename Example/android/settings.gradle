@@ -1,0 +1,5 @@
+rootProject.name = 'Example'
+include ':react-native-statusbar-manager'
+project(':react-native-statusbar-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-statusbar-manager/android')
+
+include ':app'
