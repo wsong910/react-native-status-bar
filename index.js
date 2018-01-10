@@ -1,6 +1,28 @@
+import {
+    NativeModules
+} from 'react-native';
 
-import { NativeModules } from 'react-native';
+const RNStatusbarManager = NativeModules.RNStatusbarManager;
 
-const { RNStatusbarManager } = NativeModules;
+function translucentStatusBar(isDark) {
+    RNStatusbarManager && RNStatusbarManager.translucentStatusBar && RNStatusbarManager.translucentStatusBar(isDark);
+}
 
-export default RNStatusbarManager;
+function steepOrPadding(currentRootView, needStatusBarView) {
+    RNStatusbarManager && RNStatusbarManager.steepOrPadding && RNStatusbarManager.steepOrPadding(currentRootView, needStatusBarView);
+}
+
+function steepWithConfigColorRes(currentRootView, colorRes) {
+    RNStatusbarManager && RNStatusbarManager.steepWithConfigColorRes && RNStatusbarManager.steepWithConfigColorRes(currentRootView, colorRes);
+}
+
+function steepWithConfigAll(currentRootView, colorInt, statusBarAlpha) {
+    RNStatusbarManager && RNStatusbarManager.steepWithConfigAll && RNStatusbarManager.steepWithConfigAll(currentRootView, colorInt, statusBarAlpha);
+}
+
+export {
+    translucentStatusBar,
+    steepOrPadding,
+    steepWithConfigColorRes,
+    steepWithConfigAll,
+};
