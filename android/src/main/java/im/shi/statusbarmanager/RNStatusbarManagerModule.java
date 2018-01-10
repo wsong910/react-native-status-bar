@@ -18,6 +18,7 @@ import android.widget.FrameLayout;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -64,6 +65,40 @@ public class RNStatusbarManagerModule extends ReactContextBaseJavaModule {
     public String getName() {
         return "RNStatusbarManager";
     }
+
+    @ReactMethod
+    public void translucentStatusBar(boolean isDark) {
+        Activity activity = getCurrentActivity();
+        if (activity != null) {
+            translucentStatusBar(activity, isDark);
+        }
+    }
+
+    @ReactMethod
+    public void steepOrPadding(@NonNull View currentRootView, boolean needStatusBarView) {
+        Activity activity = getCurrentActivity();
+        if (activity != null) {
+            steepStatusbarView(activity, currentRootView, needStatusBarView);
+        }
+    }
+
+    @ReactMethod
+    public void steepWithConfigColorRes(@NonNull View currentRootView, @ColorRes int color) {
+        Activity activity = getCurrentActivity();
+        if (activity != null) {
+            steepStatusbarView(activity, currentRootView, color);
+        }
+    }
+
+    @ReactMethod
+    public void steepWithConfigAll(@NonNull View currentRootView, @ColorInt int color,
+                                   @IntRange(from = 0, to = 255) int statusBarAlpha) {
+        Activity activity = getCurrentActivity();
+        if (activity != null) {
+            steepStatusbarView(activity, currentRootView, color, statusBarAlpha);
+        }
+    }
+
 
     /**
      * 全屏但不隐藏NavigationBar，透明状态栏
