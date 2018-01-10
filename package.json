@@ -1,14 +1,21 @@
 
 {
   "name": "react-native-statusbar-manager",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "StatusBar manager for steep",
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/shimohq/react-native-status-bar"
+    },
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react-native"
+    "statusBar"
+    "webview"
   ],
   "author": "",
   "license": "",
