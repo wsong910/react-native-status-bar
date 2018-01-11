@@ -33,7 +33,7 @@
 #### Attention:
 Anyway,the statusBar in this moudule is not the system statusBar.
 the theme activity has should not set to fitsSystemWindow=true,you must set this:
-```angular2html
+```
 fitsSystemWindow=false
 ```
 
