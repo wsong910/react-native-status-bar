@@ -46,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        RNStatusbarManagerModule.translucentStatusBar(this, true);
         setContentView(R.layout.test);
+        RNStatusbarManagerModule.translucentStatusBar(this, true);
         View content = LayoutInflater.from(this).inflate(R.layout.test, null);
         RNStatusbarManagerModule.steepStatusbarView(this, content, android.R.color.white);
         
