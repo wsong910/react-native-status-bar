@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
         RNStatusbarManagerModule.translucentStatusBar(this, true);
         View content = LayoutInflater.from(this).inflate(R.layout.test, null);
         RNStatusbarManagerModule.steepStatusbarView(this, content, android.R.color.white);
-        
+
     }
 }
 ```
-### This set avtivity to full screen with transparent background  statusbar and dark(or not) word（icon） in statusbar。 
+### This set avtivity to full screen with transparent background  statusbar and dark(or not) word（icon） in statusbar。
 ```java
  RNStatusbarManagerModule.translucentStatusBar(this, true);//or false
 ```
@@ -70,6 +70,3 @@ RNStatusbarManagerModule.steepStatusbarView(this,content,0xcc,0x88);
 ```java
 RNStatusbarManagerModule.steepStatusbarView(this,content,false);//or true
 ```
-
-
-

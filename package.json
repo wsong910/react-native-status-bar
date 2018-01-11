@@ -1,22 +1,21 @@
-
 {
   "name": "react-native-status-bar",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "StatusBar manager for steep",
   "repository": {
-        "type": "git",
-        "url": "https://github.com/shimohq/react-native-status-bar"
-    },
+    "type": "git",
+    "url": "https://github.com/shimohq/react-native-status-bar"
+  },
   "main": "index.js",
   "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "react-native",
     "statusBar",
     "android"
   ],
+  "scripts": {
+    "lint": "eslint ./"
+  },
   "peerDependencies": {
     "react-native": "^0.41.2"
   }
