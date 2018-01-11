@@ -1,13 +1,13 @@
 
-# react-native-statusbar-manager
+# react-native-status-bar
 
 ## Getting started
 
-`$ npm install react-native-statusbar-manager --save`
+`$ npm install react-native-status-bar --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-statusbar-manager`
+`$ react-native link react-native-status-bar`
 
 ### Manual installation
 
@@ -19,12 +19,12 @@
   - Add `new RNStatusbarManagerPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-statusbar-manager'
-  	project(':react-native-statusbar-manager').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-statusbar-manager/android')
+  	include ':react-native-status-bar'
+  	project(':react-native-status-bar').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-status-bar/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-statusbar-manager')
+      compile project(':react-native-status-bar')
   	```
 
 
@@ -39,7 +39,7 @@ fitsSystemWindow=false
 
 ###Example
 ```javascript
-import RNStatusbarManager from 'react-native-statusbar-manager';
+import RNStatusbarManager from 'react-native-status-bar';
 
 public class MainActivity extends AppCompatActivity {
 
