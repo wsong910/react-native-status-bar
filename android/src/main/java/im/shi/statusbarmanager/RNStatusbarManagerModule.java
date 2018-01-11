@@ -426,7 +426,7 @@ public class RNStatusbarManagerModule extends ReactContextBaseJavaModule {
             containerFrame.setLayoutParams(layoutParams);
             containerFrame.setFitsSystemWindows(false);
 
-            FrameLayout parent = (FrameLayout) currentRootView.getParent();
+            ViewGroup parent = (ViewGroup) currentRootView.getParent();
             parent.removeView(currentRootView);
             parent.addView(containerFrame);
             parent.setFitsSystemWindows(false);
