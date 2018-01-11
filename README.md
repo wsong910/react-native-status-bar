@@ -38,8 +38,7 @@ fitsSystemWindow=false
 ```
 
 ###Example
-```javascript
-import RNStatusbarManager from 'react-native-status-bar';
+```java
 
 public class MainActivity extends AppCompatActivity {
 
