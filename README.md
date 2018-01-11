@@ -55,19 +55,19 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 ### This set avtivity to full screen with transparent background  statusbar and dark(or not) word（icon） in statusbar。 
-```
+```java
  RNStatusbarManagerModule.translucentStatusBar(this, true);//or false
 ```
 ### if you want set statusBar to color white backgroud,you should do this below:
-```
+```java
  RNStatusbarManagerModule.steepStatusbarView(this, content, android.R.color.white);
 ```
 ### if you want set statusBar to color with alpha,you should do this below:
-```
+```java
 RNStatusbarManagerModule.steepStatusbarView(this,content,0xcc,0x88);
 ```
 ### if you want set activity looks like fitsSystemWindow = false or not ,you should do this below:
-```
+```java
 RNStatusbarManagerModule.steepStatusbarView(this,content,false);//or true
 ```
 
